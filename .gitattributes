@@ -24,3 +24,11 @@ package-lock.json linguist-generated=true
 yarn.lock linguist-generated=true
 pnpm-lock.yaml linguist-generated=true
 bun.lockb linguist-generated=true
+
+# @template-customization-start
+
+# Since GitHub Actions require committing the compiled output, we tell GitHub to suppress displaying
+# the changes.
+dist/** -diff linguist-generated=true
+
+# @template-customization-end
