@@ -10,11 +10,11 @@ runs:
   main: dist/index.js
 
 inputs:
-  scriptName:
+  script-name:
     description: The name of a "package.json" script. If specified, only monorepo packages that contain a script with the specified name will be returned.
     required: false
     default: ""
 
 outputs:
-  packageNames:
+  package-names:
     description: The names of the directories that were found in the monorepo "packages" directory.
