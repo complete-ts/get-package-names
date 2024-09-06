@@ -22,6 +22,12 @@ await lintScript(async () => {
 
     // Check for unused CSpell words.
     $`cspell-check-unused-words`,
+
+    // @template-customization-start
+
+    /// checkCompiledOutputMatches // TODO: add to complete
+
+    // @template-customization-end
   ];
 
   await Promise.all(promises);
