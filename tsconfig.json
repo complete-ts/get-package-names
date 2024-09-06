@@ -10,5 +10,9 @@
     "isaacscript-tsconfig/tsconfig.node.json",
   ],
 
+  "compilerOptions": {
+    "outDir": "dist",
+  },
+
   "include": ["./src/**/*.ts"],
 }

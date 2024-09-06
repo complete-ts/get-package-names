@@ -7,7 +7,7 @@ branding:
 
 runs:
   using: node16
-  main: dist/index.js
+  main: dist/main.js
 
 inputs:
   script-name:
