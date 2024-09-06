@@ -9,4 +9,6 @@
     // https://github.com/IsaacScript/isaacscript/blob/main/packages/isaacscript-tsconfig/tsconfig.node.json
     "isaacscript-tsconfig/tsconfig.node.json",
   ],
+
+  "include": ["./src/**/*.ts"],
 }
