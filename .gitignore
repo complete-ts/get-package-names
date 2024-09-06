@@ -103,7 +103,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+#dist # GitHub Actions need to have the compiled output committed to the repository.
 
 # Gatsby files
 .cache/

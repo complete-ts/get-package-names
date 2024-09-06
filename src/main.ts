@@ -1,4 +1,4 @@
-import core from "@actions/core";
+import * as core from "@actions/core";
 import { getMonorepoPackageNames } from "./getMonorepoPackageNames.js";
 
 const cwd = process.cwd();
