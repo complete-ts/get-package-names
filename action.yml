@@ -13,7 +13,7 @@ inputs:
 
 outputs:
   package-names:
-    description: The names of the directories that were found in the monorepo "packages" directory.
+    description: 'The names of the directories that were found in the monorepo "packages" directory. For example: ["foo", "bar"]'
 
 runs:
   using: node20
