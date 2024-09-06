@@ -94,6 +94,6 @@ jobs:
 
 ## Outputs
 
-| Key           | Type   | Description                                                                                                    |
-| ------------- | ------ | -------------------------------------------------------------------------------------------------------------- |
-| package-names | string | The names of the directories that were found in the monorepo "packages" directory. For example: ["foo", "bar"] |
+| Key           | Description                                                                                                    |
+| ------------- | -------------------------------------------------------------------------------------------------------------- |
+| package-names | The names of the directories that were found in the monorepo "packages" directory. For example: ["foo", "bar"] |
