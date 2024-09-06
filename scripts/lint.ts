@@ -1,4 +1,4 @@
-import { $, lintScript } from "complete-node";
+import { $, checkCompiledOutputInRepo, lintScript } from "complete-node";
 
 // - We cannot use top-level await because the project uses CommonJS.
 // - We have to use CommonJS because esbuild generates a bundle with the following run-time error
@@ -29,7 +29,9 @@ lintScript(async () => {
 
     // @template-customization-start
 
-    /// checkCompiledOutputMatches // TODO: add to complete
+    // Since GitHub Actions must commit the compiled output, we must check to see if it is
+    // up-to-date.
+    checkCompiledOutputInRepo,
 
     // @template-customization-end
   ];
