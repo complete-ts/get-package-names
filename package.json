@@ -1,0 +1,40 @@
+{
+  "name": "get-package-names",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/Zamiell/get-package-names",
+  "bugs": {
+    "url": "https://github.com/Zamiell/get-package-names/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zamiell/get-package-names.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Zamiell",
+  "type": "module",
+  "files": [
+    "dist",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsx ./scripts/build.ts",
+    "lint": "tsx ./scripts/lint.ts",
+    "nuke": "isaacscript nuke",
+    "publish": "isaacscript publish-ts",
+    "start": "tsx ./src/main.ts",
+    "update": "isaacscript update"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "isaacscript": "^4.5.9",
+    "isaacscript-common-node": "^4.1.1",
+    "isaacscript-lint": "^6.20.0",
+    "isaacscript-tsconfig": "^6.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}
