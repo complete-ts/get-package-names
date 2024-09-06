@@ -1,4 +1,4 @@
-import { build } from "esbuild"; // eslint-disable-line import/no-extraneous-dependencies
+import { build } from "esbuild";
 
 // - We cannot use top-level await because the project uses CommonJS.
 // - We have to use CommonJS because esbuild generates a bundle with the following run-time error
