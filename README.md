@@ -2,9 +2,9 @@
 
 ## Introduction
 
-`get-package-names` is a [GitHub Action](https://docs.github.com/en/actions) that gets all of the package names in a monorepo. You can also optionally get all of the package names that contain a certain "package.json" script (such as "test").
+`get-package-names` is a [GitHub Action](https://docs.github.com/en/actions) that gets all of the package names in a monorepo. Specifically, it will look for all directories in the "packages" directory. You can also optionally get all of the package names that contain a certain "package.json" script (such as "test").
 
-The point of this is that you can use the package names to dynamically generate GitHub actions jobs for each package. This kind of thing is great, because you no longer need to manually update your CI files whenever you add a new package to the monorepo.
+The point of this is that you can use the package names to dynamically generate GitHub actions jobs for each package. This is useful because it obviates manually updating your CI files whenever you add a new package to the monorepo.
 
 ## Usage
 
@@ -35,7 +35,7 @@ jobs:
         package-name: ${{ fromJson(needs.get-build-packages.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/workflows/setup
+      - uses: ./.github/workflows/setup # Install Node.js and dependencies
       - working-directory: ./packages/${{ matrix.package-name }}
         run: npm run build
 
@@ -58,7 +58,7 @@ jobs:
         package-name: ${{ fromJson(needs.get-lint-packages.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/workflows/setup
+      - uses: ./.github/workflows/setup # Install Node.js and dependencies
       - working-directory: ./packages/${{ matrix.package-name }}
         run: npm run lint
 
@@ -81,7 +81,7 @@ jobs:
         package-name: ${{ fromJson(needs.get-test-packages.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/workflows/setup
+      - uses: ./.github/workflows/setup # Install Node.js and dependencies
       - working-directory: ./packages/${{ matrix.package-name }}
         run: npm run test
 ```
