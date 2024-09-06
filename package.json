@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "author": "Zamiell",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "build": "tsx ./scripts/build.ts",
     "lint": "tsx ./scripts/lint.ts",
