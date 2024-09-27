@@ -33,6 +33,7 @@ jobs:
     strategy:
       matrix:
         package-name: ${{ fromJson(needs.get-build-packages.outputs.matrix) }}
+      fail-fast: false
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/workflows/setup # Install Node.js and dependencies
@@ -56,6 +57,7 @@ jobs:
     strategy:
       matrix:
         package-name: ${{ fromJson(needs.get-lint-packages.outputs.matrix) }}
+      fail-fast: false
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/workflows/setup # Install Node.js and dependencies
@@ -79,6 +81,7 @@ jobs:
     strategy:
       matrix:
         package-name: ${{ fromJson(needs.get-test-packages.outputs.matrix) }}
+      fail-fast: false
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/workflows/setup # Install Node.js and dependencies
