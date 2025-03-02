@@ -1,7 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { isDirectory, isFile } from "./file.js";
-import { isObject } from "./types.js";
+import { isDirectory, isFile, isObject } from "./utils.js";
 
 export function getMonorepoPackageNames(
   monorepoPath: string,

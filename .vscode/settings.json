@@ -27,14 +27,18 @@
     "**/.yarn/": true,
     "**/dist/": true,
     "**/node_modules/": true,
+    "bun.lock": true,
     "LICENSE": true,
+    "package-lock.json": true,
+    "pnpm-lock.yaml": true,
+    "yarn.lock": true,
   },
 
   // ------------------
   // Extension settings
   // ------------------
 
-  // Use Prettier to format "cspell.jsonc".
+  // Use Prettier to format "cspell.config.jsonc".
   "cSpell.autoFormatConfigFile": true,
 
   // -----------------

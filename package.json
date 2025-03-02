@@ -3,36 +3,33 @@
   "private": true,
   "description": "Gets the packages inside of a monorepo with optional filters.",
   "keywords": [],
-  "homepage": "https://github.com/Zamiell/get-package-names",
+  "homepage": "https://github.com/complete-ts/get-package-names",
   "bugs": {
-    "url": "https://github.com/Zamiell/get-package-names/issues"
+    "url": "https://github.com/complete-ts/get-package-names/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zamiell/get-package-names.git"
+    "url": "git+https://github.com/complete-ts/get-package-names.git"
   },
   "license": "MIT",
   "author": "Zamiell",
   "type": "commonjs",
   "scripts": {
-    "build": "tsx ./scripts/build.ts",
-    "lint": "tsx ./scripts/lint.ts",
-    "nuke": "isaacscript nuke",
-    "publish": "isaacscript publish-ts",
+    "build": "tsx ./scripts/build.mts",
+    "lint": "tsx ./scripts/lint.mts",
+    "publish": "complete-cli publish",
     "start": "tsx ./src/main.ts",
-    "update": "isaacscript update"
+    "update": "complete-cli update"
   },
   "dependencies": {
-    "@actions/core": "^1.10.1"
+    "@actions/core": "1.11.1"
   },
   "devDependencies": {
-    "@types/node": "^22.5.4",
-    "complete-node": "^1.1.0",
-    "esbuild": "^0.23.1",
-    "isaacscript": "^4.5.10",
-    "isaacscript-lint": "^6.20.0",
-    "isaacscript-tsconfig": "^6.0.0",
-    "tsx": "^4.19.0",
-    "typescript": "5.3.3"
+    "@types/node": "22.13.8",
+    "complete-cli": "1.0.28",
+    "complete-lint": "1.14.5",
+    "complete-node": "4.0.1",
+    "esbuild": "0.25.0",
+    "typescript": "5.7.3"
   }
 }
