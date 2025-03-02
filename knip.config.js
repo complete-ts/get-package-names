@@ -9,6 +9,7 @@ const config = {
     "eslint.config.mjs", // ESLint is provided by "complete-lint".
     "prettier.config.mjs", // Prettier is provided by "complete-lint".
     // @template-customization-start
+    // https://github.com/webpro-nl/knip/issues/964
     "dist/main.js",
     // @template-customization-end
   ],
