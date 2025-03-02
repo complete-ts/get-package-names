@@ -8,6 +8,9 @@ const config = {
   ignore: [
     "eslint.config.mjs", // ESLint is provided by "complete-lint".
     "prettier.config.mjs", // Prettier is provided by "complete-lint".
+    // @template-customization-start
+    "dist/main.js",
+    // @template-customization-end
   ],
   ignoreBinaries: [
     "tsx", // This is provided by "complete-lint".
