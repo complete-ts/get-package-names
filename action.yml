@@ -16,5 +16,5 @@ outputs:
     description: 'The names of the directories that were found in the monorepo "packages" directory. For example: ["foo", "bar"]'
 
 runs:
-  using: node20
+  using: node24
   main: dist/main.js
