@@ -22,14 +22,15 @@
     "update": "complete-cli update"
   },
   "dependencies": {
-    "@actions/core": "1.11.1"
+    "@actions/core": "3.0.1"
   },
   "devDependencies": {
-    "@types/node": "22.13.8",
-    "complete-cli": "1.0.28",
-    "complete-lint": "1.14.5",
-    "complete-node": "4.0.1",
-    "esbuild": "0.25.0",
-    "typescript": "5.7.3"
+    "@types/node": "26.0.1",
+    "complete-cli": "1.5.30",
+    "complete-lint": "5.20.0",
+    "complete-node": "17.0.1",
+    "esbuild": "0.28.1",
+    "tsx": "4.22.4",
+    "typescript": "6.0.3"
   }
 }
