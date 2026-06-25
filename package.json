@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@types/node": "26.0.1",
-    "complete-cli": "1.5.30",
+    "complete-cli": "1.5.31",
     "complete-lint": "5.20.0",
     "complete-node": "17.0.2",
     "esbuild": "0.28.1",
